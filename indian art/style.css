@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .Container {
+      width: 100%;
+      margin: auto;
+    }
+     
+    .navbar {
+      position: relative;
+      width: 100%;
+      z-index: 500;
+      display:inline;
+    }
+    
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      background-color:rgb(210, 254, 255);
+      height:100px;
+      width:100%;
+      display:inline;
+    }
+    
+    .menu-items {
+      display: flex;
+      align-items:center;
+      background-color:rgb(221, 246, 245);
+       width: 100%;
+       height:100px;
+       padding-left:35%;
+    }
+        
+    .menu-items li {
+      list-style: none;
+      padding: 1rem;
+    }
+    
+    .menu-items a {
+      text-decoration: none;
+      color: #16160b;
+      font-size: 1.2rem;
+      padding: 0.3rem;
+    }
+    
+    .menu-items a:hover {
+      border-bottom: 2px solid #111108;
+    }
+body{
+    background-color: rgb(157, 236, 250);
+  }
+
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('parallax-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+  }
+
+  .card:hover {
+    transform: translateZ(30px) scale(1.08);
+  }
+
+  .card-img-top {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    width: 100%;
+    height: auto;
+    /* Increase the size of the artworks */
+    max-height: 400px;
+    object-fit: contain;
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+  }
+
+  .card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .card-text {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Define the gallery container */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    padding-top: 100px;
+  }
+  
+  /* Zoom-in effect */
+  .zoomed-artwork {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .zoomed-artwork.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .zoomed-artwork img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+  
+  .comments {
+    margin-top: 20px;
+  }
+  
+  .comment {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .comment-form {
+    margin-top: 20px;
+  }
+  
+  .comment-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .comment-form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comment-form button:hover {
+    background-color: #45a049;
+  }

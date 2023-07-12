@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .Container {
+      width: 100%;
+      margin: auto;
+    }
+     
+    .navbar {
+      position: relative;
+      width: 100%;
+      z-index: 500;
+      display:inline;
+    }
+    
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      background-color:rgb(210, 255, 255);
+      height:100px;
+      width:100%;
+      display:inline;
+    }
+    
+    .menu-items {
+      display: flex;
+      align-items:center;
+      background-color:rgb(216, 216, 216);
+       width: 100%;
+       height:100px;
+       padding-left:35%;
+    }
+        
+    .menu-items li {
+      list-style: none;
+      padding: 1rem;
+    }
+    
+    .menu-items a {
+      text-decoration: none;
+      color: #16160b;
+      font-size: 1.2rem;
+      padding: 0.3rem;
+    }
+    
+    .menu-items a:hover {
+      border-bottom: 2px solid #111108;
+    }
+body {
+    background-color:  rgb(255, 136, 127);
+    background-image: url("https://wallpapers.com/images/hd/art-background-5orgdzcei749eslq.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+
+  /* Set the header background and text colors */
+  .header {
+    
+    color: #ffffff;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .container h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    
+  }
+  /* Style the hero section */
+  .hero {
+    /* align-items: center;
+    justify-content: center;
+    text-align: center; */
+    margin-bottom: 40px;
+    color: #fff1f1;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .apps div{
+    display: flex;
+    justify-content: center;
+    padding-top: 95px;
+  }
+.apps p{
+    color:#ffffff;
+    font-size: 40px;
+}
+  html{
+    scroll-behavior:smooth;
+  }

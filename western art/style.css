@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .Container {
+      width: 100%;
+      margin: auto;
+    }
+     
+    .navbar {
+      position: relative;
+      width: 100%;
+      z-index: 500;
+      display:inline;
+    }
+    
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      background-color:rgb(210, 255, 255);
+      height:100px;
+      width:100%;
+      display:inline;
+    }
+    
+    .menu-items {
+      display: flex;
+      align-items:center;
+      background-color:rgb(255, 223, 218);
+       width: 100%;
+       height:100px;
+       padding-left:35%;
+    }
+        
+    .menu-items li {
+      list-style: none;
+      padding: 1rem;
+    }
+    
+    .menu-items a {
+      text-decoration: none;
+      color: #16160b;
+      font-size: 1.2rem;
+      padding: 0.3rem;
+    }
+    
+    .menu-items a:hover {
+      border-bottom: 2px solid #111108;
+    }
+body{
+    background-color: rgb(249, 156, 149);
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('parallax-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+  }
+
+  .card:hover {
+    transform: translateZ(30px) scale(1.08);
+  }
+
+  .card-img-top {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    width: 100%;
+    height: auto;
+    /* Increase the size of the artworks */
+    max-height: 400px;
+    object-fit: contain;
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+  }
+
+  .card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .card-text {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Modified styles for grid layout */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    padding-top: 100px;
+    
+   /* Add gap between artworks */
+  }
+
+  /* Adjust the card width to fit three artworks per row */
+  .card {
+    flex-basis: calc(100% - 1rem); /* Set the width for each card */
+    max-width: calc(100% - 1rem); /* Set the maximum width for each card */
+  }
+
+  /* Adjust the card width for smaller screens */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); /* Display two columns for smaller screens */
+    }
+
+    .card {
+      flex-basis: calc(50% - 1rem); /* Set the width for each card */
+      max-width: calc(50% - 1rem); /* Set the maximum width for each card */
+    }
+  }
+
+  /* Zoom functionality */
+  .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox-content {
+    position: relative;
+    max-width: 100%;
+    max-height: 80%;
+    overflow: auto;
+  }
+
+  .lightbox-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .lightbox-title {
+    position:relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+  

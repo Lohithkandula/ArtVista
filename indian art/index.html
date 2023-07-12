@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="/Art Vista/logo.webp" type="image/jpeg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+<div class="navbar-container Container">
+    <ul class="menu-items">
+      <li style="font: size 200px; font-weight: bolder; "><a href="/Art Vista/index.html">ArtVista</a></li>
+        <li><a href="index.html">Indian Art</a></li>
+        <li><a href="/Art Vista/western art/index.html">Western Art</a></li>
+        <li><a href="/Art Vista/contact.html">Contact</a></li>
+    </ul>
+</div>
+</nav>
+
+    <div id="artContainer" class="grid">
+        <div class="card">
+          <img src="img1.jpg" class="card-img-top" alt="Painting 1" onclick="showZoomedArtwork('img1.jpg')">
+          <h5 class="card-title">Dandi  March ( Bapuji)</h5>
+          <p class="card-text">Artist: Nandlal Bose, 1882-1966</p>
+           <p class="card-text"> Date: 1930</p>
+           <p>Audio:<br>
+           <audio src="aud1.wav" controls></audio> </p>
+           <div class="comments">
+          </div>
+          <div class="comment-form">
+            <input type="text" placeholder="Leave a comment" onkeydown="handleCommentInput(event)">
+          </div>
+        </div>
+        
+  
+        <div class="card">
+          <img src="img3.jpg" class="card-img-top" alt="Painting 3" onclick="showZoomedArtwork('img3.jpg')">
+          <h5 class="card-title">Self-portrait</h5>
+          <p class="card-text">Artist: RabindranathTagore, 1861-1941</p>
+           <p class="card-text"> Date: 1920</p>
+           <p>Audio:<br>
+            <audio src="aud3.wav" controls></audio> </p>
+            <div class="comments">
+           </div>
+           <div class="comment-form">
+             <input type="text" placeholder="Leave a comment" onkeydown="handleCommentInput(event)">
+           </div>
+        </div>
+
+        <div class="card">
+            <img src="img4.jpg" class="card-img-top" alt="Painting 1" onclick="showZoomedArtwork('img4.jpg')">
+            <h5 class="card-title">Ankuran</h5>
+            <p class="card-text">Artist: S. H. Raza, 1922-2016</p>
+             <p class="card-text"> Date: 1987</p>
+             <p>Audio:<br>
+                <audio src="aud4.wav" controls></audio> </p>
+                <div class="comments">
+               </div>
+               <div class="comment-form">
+                 <input type="text" placeholder="Leave a comment" onkeydown="handleCommentInput(event)">
+               </div>
+          </div>
+    
+          <div class="card">
+            <img src="img5.jpg" class="card-img-top" alt="Painting 2" onclick="showZoomedArtwork('img5.jpg')">
+            <h5 class="card-title">Days of glory</h5>
+          <p class="card-text">Artist: Satish-Gujral, 1925-2020</p>
+           <p class="card-text"> Date: 1952</p>
+           <p>Audio:<br>
+            <audio src="aud5.wav" controls></audio> </p>
+            <div class="comments">
+           </div>
+           <div class="comment-form">
+             <input type="text" placeholder="Leave a comment" onkeydown="handleCommentInput(event)">
+           </div>
+          </div>
+    
+          <div class="card">
+            <img src="img6.jpg" class="card-img-top" alt="Painting 3" onclick="showZoomedArtwork('img6.jpg')">
+            <h5 class="card-title">Mahishasura</h5>
+          <p class="card-text">Artist: Tyeb Mehta, 1925-2009</p>
+           <p class="card-text"> Date: 1975</p>
+           <p>Audio:<br>
+            <audio src="aud6.wav" controls></audio> </p>
+            <div class="comments">
+           </div>
+           <div class="comment-form">
+             <input type="text" placeholder="Leave a comment" onkeydown="handleCommentInput(event)">
+           </div>
+          </div>    
+          
+    
+          <div class="card">
+            <img src="img9.jpg" class="card-img-top" alt="Painting 3" onclick="showZoomedArtwork('img9.jpg')">
+            <h5 class="card-title"> Three Pujarins </h5>
+            <p class="card-text">Artist: Jamini Roy, 1887-1972</p>
+             <p class="card-text"> Date: 1949</p>
+             <p>Audio:<br>
+                <audio src="aud9.wav" controls></audio> </p>
+                <div class="comments">
+               </div>
+               <div class="comment-form">
+                 <input type="text" placeholder="Leave a comment" onkeydown="handleCommentInput(event)">
+               </div>
+          </div>
+
+          <div class="card">
+            <img src="img10.jpg" class="card-img-top" alt="Painting 1" onclick="showZoomedArtwork('img10.jpg')">
+            <h5 class="card-title">Shakuntala </h5>
+          <p class="card-text">Artist: Raja Ravi Varma, 1848-1906</p>
+           <p class="card-text"> Date: 1870</p>
+           <p>Audio:<br>
+            <audio src="aud10.wav" controls></audio> </p>
+            <div class="comments">
+           </div>
+           <div class="comment-form">
+             <input type="text" placeholder="Leave a comment" onkeydown="handleCommentInput(event)">
+           </div>
+          </div>
+    
+          <div class="card">
+            <img src="img11.jpg" class="card-img-top" alt="Painting 2" onclick="showZoomedArtwork('img11.jpg')">
+            <h5 class="card-title">Bharat Mata</h5>
+          <p class="card-text">Artist: RabindranathTagore, 1861-1941</p>
+           <p class="card-text"> Date: 1925</p>
+           <p>Audio:<br>
+            <audio src="aud11.wav" controls></audio> </p>
+            <div class="comments">
+           </div>
+           <div class="comment-form">
+             <input type="text" placeholder="Leave a comment" onkeydown="handleCommentInput(event)">
+           </div>
+          </div>
+    
+          <div class="card">
+            <img src="img12.jpg" class="card-img-top" alt="Painting 3" onclick="showZoomedArtwork('img12.jpg')">
+            <h5 class="card-title">Self portrait</h5>
+          <p class="card-text">Artist: Amrita Sher-Gil, 1913-1941</p>
+           <p class="card-text"> Date: 1938</p>
+           <p>Audio:<br>
+            <audio src="aud12.wav" controls></audio> </p>
+            <div class="comments">
+           </div>
+           <div class="comment-form">
+             <input type="text" placeholder="Leave a comment" onkeydown="handleCommentInput(event)">
+           </div>
+          </div>
+
+          <div class="card">
+            <img src="img2.jpg" class="card-img-top" alt="Painting 2" onclick="showZoomedArtwork('img2.jpg')">
+            <h5 class="card-title">Horses</h5>
+            <p class="card-text">Artist: M F Husain, 1915-2011</p>
+             <p class="card-text"> Date: 1960</p>
+             <p>Audio:<br>
+              <audio src="aud2.wav" controls></audio> </p>
+              <div class="comments">
+             </div>
+             <div class="comment-form">
+               <input type="text" placeholder="Leave a comment" onkeydown="handleCommentInput(event)">
+             </div>
+          </div>
+
+
+          <div class="card">
+            <img src="img7.jpg" class="card-img-top" alt="Painting 1" onclick="showZoomedArtwork('img7.jpg')">
+            <h5 class="card-title">Krishna Spring in Kulu </h5>
+          <p class="card-text">Artist: Nicholas-Roerich, 1874-1947</p>
+           <p class="card-text"> Date: 1930</p>
+           <p>Audio:<br>
+            <audio src="aud7.wav" controls></audio> </p>
+            <div class="comments">
+           </div>
+           <div class="comment-form">
+             <input type="text" placeholder="Leave a comment" onkeydown="handleCommentInput(event)">
+           </div>
+          </div>
+
+
+          <div class="card">
+            <img src="img8.jpg" class="card-img-top" alt="Painting 2" onclick="showZoomedArtwork('img8.jpg')">
+            <h5 class="card-title">Brahmacharis Amrita Sher-Gil</h5>
+          <p class="card-text">Artist: Amrita Sher-Gil, 1913-1941</p>
+           <p class="card-text"> Date: 1937</p>
+           <p>Audio:<br>
+            <audio src="aud8.wav" controls></audio> </p>
+            <div class="comments">
+           </div>
+           <div class="comment-form">
+             <input type="text" placeholder="Leave a comment" onkeydown="handleCommentInput(event)">
+           </div>
+          </div>
+
+
+      </div>
+  
+
+
+      <div class="zoomed-artwork" onclick="hideZoomedArtwork()">
+        <img id="zoomed-image" alt="">
+      </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
